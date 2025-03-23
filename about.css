@@ -1,0 +1,396 @@
+/* 
+===================
+About Page Specific Styling
+===================
+*/
+
+/* Animated Section Titles */
+.section-title {
+    position: relative;
+    display: inline-block;
+    padding-bottom: 10px;
+    margin-bottom: 3rem;
+    text-align: center;
+    width: 100%;
+  }
+  
+  .section-title::after {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 80px;
+    height: 3px;
+    background: var(--primary-color);
+    transition: width 0.5s ease;
+  }
+  
+  .section-title:hover::after {
+    width: 120px;
+  }
+  
+  /* Animated Header Elements */
+  .animate-header {
+    opacity: 0;
+    transform: translateY(30px);
+    animation: fadeInUp 0.8s ease forwards;
+  }
+  
+  .animate-header:nth-child(2) {
+    animation-delay: 0.2s;
+  }
+  
+  @keyframes fadeInUp {
+    to {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+  
+  /* Reveal Animations */
+  .reveal-left, .reveal-right, .reveal-bottom, .reveal-item, .reveal-timeline {
+    opacity: 0;
+    transition: all 1s ease;
+  }
+  
+  .reveal-left.active {
+    opacity: 1;
+    transform: translateX(0);
+  }
+  
+  .reveal-right.active {
+    opacity: 1;
+    transform: translateX(0);
+  }
+  
+  .reveal-left {
+    transform: translateX(-100px);
+  }
+  
+  .reveal-right {
+    transform: translateX(100px);
+  }
+  
+  .reveal-bottom {
+    transform: translateY(80px);
+  }
+  
+  .reveal-bottom.active {
+    opacity: 1;
+    transform: translateY(0);
+  }
+  
+  .reveal-item {
+    transform: translateY(50px);
+  }
+  
+  .reveal-item.active {
+    opacity: 1;
+    transform: translateY(0);
+  }
+  
+  .reveal-timeline {
+    transform: scale(0.8);
+  }
+  
+  .reveal-timeline.active {
+    opacity: 1;
+    transform: scale(1);
+  }
+  
+  /* Staggered Animation for Team Members */
+  .team-member:nth-child(1) {
+    transition-delay: 0.1s;
+  }
+  
+  .team-member:nth-child(2) {
+    transition-delay: 0.3s;
+  }
+  
+  .team-member:nth-child(3) {
+    transition-delay: 0.5s;
+  }
+  
+  .team-member:nth-child(4) {
+    transition-delay: 0.7s;
+  }
+  
+  /* Enhanced Mission Vision Section */
+  .mission-vision {
+    position: relative;
+    overflow: hidden;
+  }
+  
+  .mission-box, .vision-box {
+    position: relative;
+    overflow: hidden;
+    z-index: 1;
+    transition: transform 0.4s ease, box-shadow 0.4s ease;
+  }
+  
+  .mission-box:hover, .vision-box:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 15px 30px rgba(0, 0, 0, 0.15);
+  }
+  
+  .icon-container {
+    position: absolute;
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    background: rgba(255, 255, 255, 0.1);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    bottom: 20px;
+    right: 20px;
+    transition: all 0.3s ease;
+  }
+  
+  .mission-icon, .vision-icon {
+    font-size: 30px;
+    color: var(--primary-color);
+    opacity: 0.7;
+    transition: all 0.3s ease;
+  }
+  
+  .mission-box:hover .icon-container, .vision-box:hover .icon-container {
+    transform: scale(1.2);
+    background: rgba(255, 255, 255, 0.2);
+  }
+  
+  .mission-box:hover .mission-icon, .vision-box:hover .vision-icon {
+    opacity: 1;
+    transform: rotate(360deg);
+  }
+  
+  /* Enhanced Timeline */
+  .timeline {
+    position: relative;
+    padding: 6rem 0;
+    overflow: hidden;
+  }
+  
+  .timeline-item {
+    position: relative;
+    opacity: 0.8;
+    transition: opacity 0.3s ease;
+  }
+  
+  .timeline-item:hover {
+    opacity: 1;
+  }
+  
+  .timeline-content {
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.05);
+  }
+  
+  .timeline-content:hover {
+    transform: scale(1.03);
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.1);
+  }
+  
+  .timeline-date {
+    transition: transform 0.3s ease, color 0.3s ease;
+  }
+  
+  .timeline-content:hover .timeline-date {
+    transform: scale(1.1);
+    color: var(--primary-color);
+  }
+  
+  /* Team Section Enhancements */
+  .team-member {
+    position: relative;
+    overflow: hidden;
+    transition: transform 0.4s ease, box-shadow 0.4s ease;
+  }
+  
+  .team-member-image {
+    position: relative;
+    overflow: hidden;
+  }
+  
+  .team-member-image img {
+    transition: transform 0.5s ease;
+  }
+  
+  .member-social {
+    position: absolute;
+    bottom: -50px;
+    left: 0;
+    width: 100%;
+    background: rgba(0, 0, 0, 0.7);
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+    padding: 15px 0;
+    transition: bottom 0.3s ease;
+  }
+  
+  .member-social a {
+    color: white;
+    font-size: 18px;
+    transition: transform 0.3s ease, color 0.3s ease;
+  }
+  
+  .member-social a:hover {
+    color: var(--primary-color);
+    transform: scale(1.2);
+  }
+  
+  .team-member:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 15px 30px rgba(0, 0, 0, 0.15);
+  }
+  
+  .team-member:hover .member-social {
+    bottom: 0;
+  }
+  
+  .team-member:hover .team-member-image img {
+    transform: scale(1.1);
+  }
+  
+  /* Partner Logo Animations */
+  .partner-logo {
+    position: relative;
+    overflow: hidden;
+    transition: all 0.4s ease;
+  }
+  
+  .partner-logo img {
+    transition: transform 0.4s ease, filter 0.4s ease;
+    filter: grayscale(100%);
+  }
+  
+  .partner-logo:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.1);
+  }
+  
+  .partner-logo:hover img {
+    transform: scale(1.1);
+    filter: grayscale(0%);
+  }
+  
+  /* Join Us CTA Section with Parallax */
+  .join-us-cta {
+    position: relative;
+    background: url('../images/our-story.jpg') no-repeat center center/cover;
+    background-attachment: fixed; /* Parallax effect */
+    padding: 8rem 0;
+    color: white;
+    text-align: center;
+    overflow: hidden;
+  }
+  
+  .parallax-overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(rgba(74, 144, 226, 0.8), rgba(0, 0, 0, 0.7));
+    z-index: 1;
+  }
+  
+  .cta-content {
+    position: relative;
+    z-index: 2;
+    max-width: 800px;
+    margin: 0 auto;
+  }
+  
+  .cta-content h2 {
+    font-size: 2.8rem;
+    margin-bottom: 1rem;
+    color: white;
+  }
+  
+  .cta-content p {
+    font-size: 1.2rem;
+    margin-bottom: 2rem;
+  }
+  
+  .cta-buttons {
+    display: flex;
+    justify-content: center;
+    gap: 1.5rem;
+  }
+  
+  .cta-btn {
+    padding: 1rem 2rem;
+    border-radius: 50px;
+    font-size: 1.1rem;
+    font-weight: 600;
+    transition: all 0.3s ease;
+    cursor: pointer;
+  }
+  
+  .cta-btn.primary {
+    background-color: white;
+    color: var(--primary-color);
+    border: 2px solid white;
+  }
+  
+  .cta-btn.secondary {
+    background-color: transparent;
+    color: white;
+    border: 2px solid white;
+  }
+  
+  .cta-btn.primary:hover {
+    background-color: var(--primary-color);
+    color: white;
+    transform: translateY(-5px);
+  }
+  
+  .cta-btn.secondary:hover {
+    background-color: white;
+    color: var(--primary-color);
+    transform: translateY(-5px);
+  }
+  
+  /* Glowing animation for core values */
+  @keyframes glow {
+    0% {
+      box-shadow: 0 0 10px rgba(74, 144, 226, 0.3);
+    }
+    50% {
+      box-shadow: 0 0 20px rgba(74, 144, 226, 0.6);
+    }
+    100% {
+      box-shadow: 0 0 10px rgba(74, 144, 226, 0.3);
+    }
+  }
+  
+  .value-item:hover {
+    animation: glow 2s infinite;
+  }
+  
+  .value-icon {
+    transition: transform 0.4s ease;
+  }
+  
+  .value-item:hover .value-icon {
+    transform: rotateY(180deg);
+  }
+  
+  /* Responsive adjustments */
+  @media (max-width: 768px) {
+    .cta-buttons {
+      flex-direction: column;
+      gap: 1rem;
+    }
+    
+    .cta-btn {
+      width: 100%;
+    }
+    
+    .join-us-cta {
+      background-attachment: scroll; /* Disable parallax on mobile */
+    }
+  }

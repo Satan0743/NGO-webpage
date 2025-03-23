@@ -1,0 +1,352 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Hope Foundation - NGO</title>
+  <link rel="stylesheet" href="styles.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700&family=Open+Sans:wght@300;400;500;600&display=swap" rel="stylesheet">
+</head>
+<body>
+  <!-- Navigation Bar -->
+  <nav class="navbar">
+    <div class="container">
+      <a href="index.html" class="logo">Hope Foundation</a>
+      <div class="nav-links" id="navLinks">
+        <ul>
+          <li><a href="index.html" class="active">Home</a></li>
+          <li><a href="about.html">About Us</a></li>
+          <li><a href="services.html">Our Services</a></li>
+          <li><a href="contact.html">Contact</a></li>
+        </ul>
+      </div>
+      <div class="donate-btn-container">
+        <button class="donate-btn" id="donateBtn">Donate Now</button>
+      </div>
+      <div class="menu-toggle">
+        <i class="fas fa-bars"></i>
+      </div>
+    </div>
+  </nav>
+
+  <!-- Hero Section -->
+  <section class="hero">
+    <div class="hero-content">
+      <h1>Empowering Communities</h1>
+      <h2>Creating Sustainable Change</h2>
+      <p>Together we can make a difference in the lives of people around the world</p>
+      <button class="hero-btn" id="heroDonateBtn">Donate Now</button>
+    </div>
+    <div class="hero-overlay"></div>
+    <video class="hero-video" autoplay muted loop playsinline>
+      <source src="istockphoto-1823611213-640_adpp_is.mp4" type="video/mp4">
+      Your browser does not support the video tag.
+    </video>
+  </section>
+
+  <!-- Impact Stats Section -->
+  <section class="impact-stats">
+    <div class="container">
+      <h2>Our Impact</h2>
+      <div class="stats-container">
+        <div class="stat-item">
+          <h3 class="counter" data-target="150">0</h3>
+          <p>Communities Served</p>
+        </div>
+        <div class="stat-item">
+          <h3 class="counter" data-target="25000">0</h3>
+          <p>Lives Impacted</p>
+        </div>
+        <div class="stat-item">
+          <h3 class="counter" data-target="500">0</h3>
+          <p>Projects Completed</p>
+        </div>
+        <div class="stat-item">
+          <h3 class="counter" data-target="75">0</h3>
+          <p>Countries Reached</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Mission Section -->
+  <section class="mission">
+    <div class="container">
+      <h2>Our Mission</h2>
+      <div class="mission-cards">
+        <div class="mission-card">
+          <div class="mission-icon">
+            <i class="fas fa-heart"></i>
+          </div>
+          <h3>Compassion</h3>
+          <p>Putting the needs of others first and acting with kindness in everything we do</p>
+        </div>
+        <div class="mission-card">
+          <div class="mission-icon">
+            <i class="fas fa-hands-helping"></i>
+          </div>
+          <h3>Empowerment</h3>
+          <p>Providing tools and resources for communities to build their own sustainable future</p>
+        </div>
+        <div class="mission-card">
+          <div class="mission-icon">
+            <i class="fas fa-bullseye"></i>
+          </div>
+          <h3>Impact</h3>
+          <p>Creating measurable, lasting change through effective programs and partnerships</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Projects Section -->
+  <section class="projects">
+    <div class="container">
+      <h2>Current Projects</h2>
+      <div class="project-cards">
+        <div class="project-card">
+          <img src="17479.jpg" alt="Education Project">
+          <div class="project-content">
+            <h3>Education For All</h3>
+            <p>Building schools and providing quality education in underprivileged areas</p>
+            <div class="progress-container">
+              <div class="progress-bar">
+                <div class="progress-fill" style="width: 75%"></div>
+              </div>
+              <div class="progress-info">
+                <span>$75,000 raised</span>
+                <span>$100,000 goal</span>
+              </div>
+            </div>
+            <button class="donate-project-btn" data-project="education">Donate to this Project</button>
+          </div>
+        </div>
+        <div class="project-card">
+          <img src="healthcare.jpg" alt="Healthcare Project">
+          <div class="project-content">
+            <h3>Healthcare Initiative</h3>
+            <p>Providing medical services and healthcare education to remote communities</p>
+            <div class="progress-container">
+              <div class="progress-bar">
+                <div class="progress-fill" style="width: 60%"></div>
+              </div>
+              <div class="progress-info">
+                <span>$30,000 raised</span>
+                <span>$50,000 goal</span>
+              </div>
+            </div>
+            <button class="donate-project-btn" data-project="healthcare">Donate to this Project</button>
+          </div>
+        </div>
+        <div class="project-card">
+          <img src="pngtree-cleanwateraccesseps-clean-water-access-reach-need-right-equality-opportunity-human-image_44731020.jpg" alt="Water Project">
+          <div class="project-content">
+            <h3>Clean Water Access</h3>
+            <p>Constructing wells and water filtration systems in water-scarce regions</p>
+            <div class="progress-container">
+              <div class="progress-bar">
+                <div class="progress-fill" style="width: 40%"></div>
+              </div>
+              <div class="progress-info">
+                <span>$20,000 raised</span>
+                <span>$50,000 goal</span>
+              </div>
+            </div>
+            <button class="donate-project-btn" data-project="water">Donate to this Project</button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Testimonials Section -->
+  <section class="testimonials">
+    <div class="container">
+      <h2>Testimonials</h2>
+      <div class="testimonial-slider">
+        <div class="testimonial-slides">
+          <div class="testimonial-slide active">
+            <div class="testimonial-content">
+              <p>"The education program provided by Hope Foundation has transformed our village. Our children now have access to quality education and a brighter future."</p>
+              <div class="testimonial-author">
+                <img src="images/testimonial-1.jpg" alt="Sarah Johnson">
+                <div>
+                  <h4>Sarah Johnson</h4>
+                  <p>Village Leader, Ghana</p>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="testimonial-slide">
+            <div class="testimonial-content">
+              <p>"Thanks to the healthcare initiative, our community now has access to medical services that were previously unavailable. This has literally saved lives."</p>
+              <div class="testimonial-author">
+                <img src="images/testimonial-2.jpg" alt="David Rodriguez">
+                <div>
+                  <h4>David Rodriguez</h4>
+                  <p>Community Health Worker, Peru</p>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="testimonial-slide">
+            <div class="testimonial-content">
+              <p>"The water project has changed everything for us. No longer do we have to walk miles for clean water. Our quality of life has improved significantly."</p>
+              <div class="testimonial-author">
+                <img src="images/testimonial-3.jpg" alt="Amina Khalid">
+                <div>
+                  <h4>Amina Khalid</h4>
+                  <p>Mother of three, Kenya</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="testimonial-controls">
+          <button class="testimonial-prev"><i class="fas fa-chevron-left"></i></button>
+          <div class="testimonial-dots">
+            <span class="testimonial-dot active" data-index="0"></span>
+            <span class="testimonial-dot" data-index="1"></span>
+            <span class="testimonial-dot" data-index="2"></span>
+          </div>
+          <button class="testimonial-next"><i class="fas fa-chevron-right"></i></button>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Newsletter Section -->
+  <section class="newsletter">
+    <div class="container">
+      <h2>Stay Connected</h2>
+      <p>Subscribe to our newsletter for updates on our projects and how you can help.</p>
+      <form id="newsletterForm" class="newsletter-form">
+        <input type="email" placeholder="Your email address" required>
+        <button type="submit">Subscribe</button>
+      </form>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-content">
+        <div class="footer-section">
+          <h3>Hope Foundation</h3>
+          <p>Making a difference in communities worldwide through sustainable development, education, and healthcare initiatives.</p>
+          <div class="social-links">
+            <a href="https://facebook.com" target="_blank"><i class="fab fa-facebook-f"></i></a>
+            <a href="https://twitter.com" target="_blank"><i class="fab fa-twitter"></i></a>
+            <a href="https://instagram.com" target="_blank"><i class="fab fa-instagram"></i></a>
+            <a href="https://linkedin.com" target="_blank"><i class="fab fa-linkedin-in"></i></a>
+          </div>
+        </div>
+        <div class="footer-section">
+          <h3>Quick Links</h3>
+          <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="about.html">About Us</a></li>
+            <li><a href="services.html">Our Services</a></li>
+            <li><a href="contact.html">Contact</a></li>
+            <li><a href="#" id="footerDonateBtn">Donate</a></li>
+            <li><a href="volunteer.html">Volunteer</a></li>
+          </ul>
+        </div>
+        <div class="footer-section">
+          <h3>Programs</h3>
+          <ul>
+            <li><a href="services.html">Education</a></li>
+            <li><a href="services.html">Healthcare</a></li>
+            <li><a href="services.html">Water & Sanitation</a></li>
+            <li><a href="services.html">Economic Empowerment</a></li>
+            <li><a href="services.html">Disaster Relief</a></li>
+          </ul>
+        </div>
+        <div class="footer-section">
+          <h3>Newsletter</h3>
+          <p>Subscribe to our newsletter for updates on our projects and how you can help.</p>
+          <form id="footerNewsletterForm" class="footer-newsletter-form">
+            <input type="email" placeholder="Your email address" required>
+            <button type="submit">Subscribe</button>
+          </form>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <p>&copy; <span id="currentYear"></span> Hope Foundation. All rights reserved.</p>
+        <div class="footer-bottom-links">
+          <button onclick="window.location.href='privacy.html'">Privacy Policy</button>
+          <button onclick="window.location.href='terms.html'">Terms of Service</button>
+          <button onclick="window.location.href='sitemap.html'">Sitemap</button>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Donation Modal -->
+  <div class="modal" id="donationModal">
+    <div class="modal-content">
+      <span class="close-modal">&times;</span>
+      <h2>Make a Donation</h2>
+      <p>Your generous contribution helps us create lasting change in communities.</p>
+      <form id="donationForm">
+        <div class="form-group">
+          <label>Select Amount</label>
+          <div class="amount-options">
+            <div class="amount-option">
+              <input type="radio" name="amount" id="amount-10" value="10">
+              <label for="amount-10">$10</label>
+            </div>
+            <div class="amount-option">
+              <input type="radio" name="amount" id="amount-25" value="25">
+              <label for="amount-25">$25</label>
+            </div>
+            <div class="amount-option">
+              <input type="radio" name="amount" id="amount-50" value="50" checked>
+              <label for="amount-50">$50</label>
+            </div>
+            <div class="amount-option">
+              <input type="radio" name="amount" id="amount-100" value="100">
+              <label for="amount-100">$100</label>
+            </div>
+            <div class="amount-option custom-amount">
+              <input type="radio" name="amount" id="amount-custom" value="custom">
+              <label for="amount-custom">
+                <span>Custom:</span>
+                <input type="number" id="customAmount" placeholder="Enter amount" disabled>
+              </label>
+            </div>
+          </div>
+        </div>
+        <div class="form-group">
+          <label for="frequency">Donation Frequency</label>
+          <select id="frequency" name="frequency">
+            <option value="one-time">One-time</option>
+            <option value="monthly">Monthly</option>
+            <option value="quarterly">Quarterly</option>
+            <option value="annually">Annually</option>
+          </select>
+        </div>
+        <div class="form-group">
+          <label for="project">Donate To</label>
+          <select id="project" name="project">
+            <option value="general">General Fund</option>
+            <option value="education">Education</option>
+            <option value="healthcare">Healthcare</option>
+            <option value="water">Water & Sanitation</option>
+            <option value="economic">Economic Empowerment</option>
+          </select>
+        </div>
+        <div class="form-buttons">
+          <button type="button" class="cancel-btn" id="cancelDonation">Cancel</button>
+          <button type="submit" class="submit-btn" id="submitDonation">Donate Now</button>
+        </div>
+      </form>
+    </div>
+  </div>
+
+  <script src="main.js"></script>
+</body> 
+</html>

@@ -1,0 +1,572 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Our Services - Hope Foundation</title>
+  <link rel="stylesheet" href="styles.css">
+  <link rel="stylesheet" href="services.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700&family=Open+Sans:wght@300;400;500;600&display=swap" rel="stylesheet">
+</head>
+<body>
+  <!-- Navigation Bar -->
+  <nav class="navbar">
+    <div class="container">
+      <a href="index.html" class="logo">Hope Foundation</a>
+      <div class="nav-links" id="navLinks">
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="about.html">About Us</a></li>
+          <li><a href="services.html" class="active">Our Services</a></li>
+          <li><a href="contact.html">Contact</a></li>
+        </ul>
+      </div>
+      <div class="donate-btn-container">
+        <button class="donate-btn" id="donateBtn">Donate Now</button>
+      </div>
+      <div class="menu-toggle">
+        <i class="fas fa-bars"></i>
+      </div>
+    </div>
+  </nav>
+
+  <!-- Page Header -->
+  <section class="page-header">
+    <div class="page-header-overlay"></div>
+    <div class="page-header-content">
+      <h1 class="fade-in">Our Services</h1>
+      <p class="fade-in">Discover how we're making a difference through our key program areas</p>
+    </div>
+  </section>
+
+  <!-- Interactive Service Tabs -->
+  <section class="service-tabs">
+    <div class="container">
+      <h2 class="section-title">Our Programs</h2>
+      <div class="tabs-container">
+        <div class="tabs-navigation">
+          <button class="tab-button active" data-tab="education">
+            <i class="fas fa-graduation-cap"></i>
+            <span>Education</span>
+          </button>
+          <button class="tab-button" data-tab="healthcare">
+            <i class="fas fa-heartbeat"></i>
+            <span>Healthcare</span>
+          </button>
+          <button class="tab-button" data-tab="water">
+            <i class="fas fa-tint"></i>
+            <span>Water & Sanitation</span>
+          </button>
+          <button class="tab-button" data-tab="economic">
+            <i class="fas fa-chart-line"></i>
+            <span>Economic Empowerment</span>
+          </button>
+          <button class="tab-button" data-tab="disaster">
+            <i class="fas fa-house-damage"></i>
+            <span>Disaster Relief</span>
+          </button>
+        </div>
+        
+        <div class="tab-content-container">
+          <!-- Education Tab -->
+          <div class="tab-content active" id="education-tab">
+            <div class="tab-image">
+              <img src="es.jpg" alt="Education Services">
+            </div>
+            <div class="tab-info">
+              <h3>Education For All</h3>
+              <p>Our education programs aim to increase access to quality education for children and adults in underserved communities, with a focus on sustainability and local involvement.</p>
+              <div class="key-impacts">
+                <div class="impact-item">
+                  <div class="impact-number">250+</div>
+                  <div class="impact-text">Schools Built</div>
+                </div>
+                <div class="impact-item">
+                  <div class="impact-number">15,000+</div>
+                  <div class="impact-text">Students Educated</div>
+                </div>
+                <div class="impact-item">
+                  <div class="impact-number">1,200+</div>
+                  <div class="impact-text">Teachers Trained</div>
+                </div>
+              </div>
+              <h4>Our Approach</h4>
+              <ul class="approach-list">
+                <li><i class="fas fa-check-circle"></i> Building and renovating schools in underserved communities</li>
+                <li><i class="fas fa-check-circle"></i> Providing scholarships for students from low-income families</li>
+                <li><i class="fas fa-check-circle"></i> Training and supporting local teachers</li>
+                <li><i class="fas fa-check-circle"></i> Developing culturally appropriate educational materials</li>
+                <li><i class="fas fa-check-circle"></i> Creating adult literacy and vocational training programs</li>
+              </ul>
+              <div class="tab-cta">
+                <button class="cta-button donate-project-btn" data-project="education">Support This Cause</button>
+                <button class="cta-button-outline" onclick="window.location.href='contact.html#volunteer'">Volunteer</button>
+              </div>
+            </div>
+          </div>
+          
+          <!-- Healthcare Tab -->
+          <div class="tab-content" id="healthcare-tab">
+            <div class="tab-image">
+              <img src="images/healthcare-service.jpg" alt="Healthcare Services">
+            </div>
+            <div class="tab-info">
+              <h3>Healthcare Initiative</h3>
+              <p>Our healthcare programs focus on improving access to quality healthcare services for communities in need, with an emphasis on preventive care and health education.</p>
+              <div class="key-impacts">
+                <div class="impact-item">
+                  <div class="impact-number">75+</div>
+                  <div class="impact-text">Medical Facilities</div>
+                </div>
+                <div class="impact-item">
+                  <div class="impact-number">300,000+</div>
+                  <div class="impact-text">Patients Treated</div>
+                </div>
+                <div class="impact-item">
+                  <div class="impact-number">5,000+</div>
+                  <div class="impact-text">Health Workers Trained</div>
+                </div>
+              </div>
+              <h4>Our Approach</h4>
+              <ul class="approach-list">
+                <li><i class="fas fa-check-circle"></i> Establishing medical clinics in underserved areas</li>
+                <li><i class="fas fa-check-circle"></i> Providing essential medicines and medical supplies</li>
+                <li><i class="fas fa-check-circle"></i> Training community health workers</li>
+                <li><i class="fas fa-check-circle"></i> Conducting health education campaigns</li>
+                <li><i class="fas fa-check-circle"></i> Organizing immunization drives and health screenings</li>
+              </ul>
+              <div class="tab-cta">
+                <button class="cta-button donate-project-btn" data-project="healthcare">Support This Cause</button>
+                <button class="cta-button-outline" onclick="window.location.href='contact.html#volunteer'">Volunteer</button>
+              </div>
+            </div>
+          </div>
+          
+          <!-- Water & Sanitation Tab -->
+          <div class="tab-content" id="water-tab">
+            <div class="tab-image">
+              <img src="images/water-service.jpg" alt="Water & Sanitation Services">
+            </div>
+            <div class="tab-info">
+              <h3>Clean Water Access</h3>
+              <p>Our water and sanitation programs aim to provide communities with access to clean water, proper sanitation facilities, and hygiene education to improve health outcomes and quality of life.</p>
+              <div class="key-impacts">
+                <div class="impact-item">
+                  <div class="impact-number">500+</div>
+                  <div class="impact-text">Wells Installed</div>
+                </div>
+                <div class="impact-item">
+                  <div class="impact-number">200,000+</div>
+                  <div class="impact-text">People with Clean Water</div>
+                </div>
+                <div class="impact-item">
+                  <div class="impact-number">300+</div>
+                  <div class="impact-text">Communities Served</div>
+                </div>
+              </div>
+              <h4>Our Approach</h4>
+              <ul class="approach-list">
+                <li><i class="fas fa-check-circle"></i> Drilling wells and installing hand pumps</li>
+                <li><i class="fas fa-check-circle"></i> Constructing rainwater harvesting systems</li>
+                <li><i class="fas fa-check-circle"></i> Building latrines and sanitation facilities</li>
+                <li><i class="fas fa-check-circle"></i> Conducting hygiene education programs</li>
+                <li><i class="fas fa-check-circle"></i> Training local communities in water management</li>
+              </ul>
+              <div class="tab-cta">
+                <button class="cta-button donate-project-btn" data-project="water">Support This Cause</button>
+                <button class="cta-button-outline" onclick="window.location.href='contact.html#volunteer'">Volunteer</button>
+              </div>
+            </div>
+          </div>
+          
+          <!-- Economic Empowerment Tab -->
+          <div class="tab-content" id="economic-tab">
+            <div class="tab-image">
+              <img src="images/economic-service.jpg" alt="Economic Empowerment Services">
+            </div>
+            <div class="tab-info">
+              <h3>Economic Empowerment</h3>
+              <p>Our economic empowerment programs focus on providing skills training, microfinance opportunities, and market access to help individuals and communities achieve financial independence.</p>
+              <div class="key-impacts">
+                <div class="impact-item">
+                  <div class="impact-number">10,000+</div>
+                  <div class="impact-text">Microloans Provided</div>
+                </div>
+                <div class="impact-item">
+                  <div class="impact-number">5,000+</div>
+                  <div class="impact-text">Businesses Started</div>
+                </div>
+                <div class="impact-item">
+                  <div class="impact-number">25,000+</div>
+                  <div class="impact-text">People Trained</div>
+                </div>
+              </div>
+              <h4>Our Approach</h4>
+              <ul class="approach-list">
+                <li><i class="fas fa-check-circle"></i> Providing vocational and business skills training</li>
+                <li><i class="fas fa-check-circle"></i> Offering microloans to entrepreneurs</li>
+                <li><i class="fas fa-check-circle"></i> Creating savings and loan groups</li>
+                <li><i class="fas fa-check-circle"></i> Facilitating market access for products</li>
+                <li><i class="fas fa-check-circle"></i> Supporting women's economic empowerment initiatives</li>
+              </ul>
+              <div class="tab-cta">
+                <button class="cta-button donate-project-btn" data-project="economic">Support This Cause</button>
+                <button class="cta-button-outline" onclick="window.location.href='contact.html#volunteer'">Volunteer</button>
+              </div>
+            </div>
+          </div>
+          
+          <!-- Disaster Relief Tab -->
+          <div class="tab-content" id="disaster-tab">
+            <div class="tab-image">
+              <img src="images/disaster-service.jpg" alt="Disaster Relief Services">
+            </div>
+            <div class="tab-info">
+              <h3>Disaster Relief & Recovery</h3>
+              <p>Our disaster relief programs provide immediate assistance to communities affected by natural disasters and conflicts, while also supporting long-term recovery and rebuilding efforts.</p>
+              <div class="key-impacts">
+                <div class="impact-item">
+                  <div class="impact-number">50+</div>
+                  <div class="impact-text">Disasters Responded To</div>
+                </div>
+                <div class="impact-item">
+                  <div class="impact-number">500,000+</div>
+                  <div class="impact-text">People Assisted</div>
+                </div>
+                <div class="impact-item">
+                  <div class="impact-number">200+</div>
+                  <div class="impact-text">Communities Rebuilt</div>
+                </div>
+              </div>
+              <h4>Our Approach</h4>
+              <ul class="approach-list">
+                <li><i class="fas fa-check-circle"></i> Providing emergency food, water, and shelter</li>
+                <li><i class="fas fa-check-circle"></i> Delivering medical assistance and supplies</li>
+                <li><i class="fas fa-check-circle"></i> Supporting reconstruction of homes and infrastructure</li>
+                <li><i class="fas fa-check-circle"></i> Implementing disaster preparedness training</li>
+                <li><i class="fas fa-check-circle"></i> Providing psychosocial support to affected individuals</li>
+              </ul>
+              <div class="tab-cta">
+                <button class="cta-button donate-project-btn" data-project="disaster">Support This Cause</button>
+                <button class="cta-button-outline" onclick="window.location.href='contact.html#volunteer'">Volunteer</button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Project Showcase with Filtering -->
+  <section class="project-showcase">
+    <div class="container">
+      <h2 class="section-title">Project Showcase</h2>
+      <div class="filter-container">
+        <button class="filter-btn active" data-filter="all">All Projects</button>
+        <button class="filter-btn" data-filter="education">Education</button>
+        <button class="filter-btn" data-filter="healthcare">Healthcare</button>
+        <button class="filter-btn" data-filter="water">Water</button>
+        <button class="filter-btn" data-filter="economic">Economic</button>
+        <button class="filter-btn" data-filter="disaster">Disaster Relief</button>
+      </div>
+      <div class="showcase-grid">
+        <div class="showcase-item" data-category="education">
+          <img src="images/project-showcase-1.jpg" alt="School Building Project">
+          <div class="showcase-overlay">
+            <h3>School Building Project</h3>
+            <p>Construction of primary schools in rural Tanzania</p>
+          </div>
+        </div>
+        <div class="showcase-item" data-category="healthcare">
+          <img src="images/project-showcase-2.jpg" alt="Mobile Medical Clinics">
+          <div class="showcase-overlay">
+            <h3>Mobile Medical Clinics</h3>
+            <p>Providing healthcare services in remote areas of Myanmar</p>
+          </div>
+        </div>
+        <div class="showcase-item" data-category="water">
+          <img src="images/project-showcase-3.jpg" alt="Clean Water Initiative">
+          <div class="showcase-overlay">
+            <h3>Clean Water Initiative</h3>
+            <p>Well drilling and water filtration systems in Ethiopia</p>
+          </div>
+        </div>
+        <div class="showcase-item" data-category="economic">
+          <img src="images/project-showcase-4.jpg" alt="Women's Cooperative">
+          <div class="showcase-overlay">
+            <h3>Women's Cooperative</h3>
+            <p>Supporting women entrepreneurs in Guatemala</p>
+          </div>
+        </div>
+        <div class="showcase-item" data-category="disaster">
+          <img src="images/project-showcase-5.jpg" alt="Earthquake Recovery">
+          <div class="showcase-overlay">
+            <h3>Earthquake Recovery</h3>
+            <p>Rebuilding communities in Nepal after the earthquake</p>
+          </div>
+        </div>
+        <div class="showcase-item" data-category="education">
+          <img src="images/project-showcase-6.jpg" alt="Teacher Training Program">
+          <div class="showcase-overlay">
+            <h3>Teacher Training Program</h3>
+            <p>Professional development for educators in Cambodia</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Interactive Impact Map -->
+  <section class="impact-map">
+    <div class="container">
+      <h2 class="section-title">Our Global Reach</h2>
+      <div class="map-container">
+        <div class="world-map" id="worldMap">
+          <!-- Map will be generated with JavaScript -->
+        </div>
+        <div class="map-legend">
+          <div class="legend-item">
+            <span class="legend-color" style="background-color: #4a90e2;"></span>
+            <span>Education</span>
+          </div>
+          <div class="legend-item">
+            <span class="legend-color" style="background-color: #50c878;"></span>
+            <span>Healthcare</span>
+          </div>
+          <div class="legend-item">
+            <span class="legend-color" style="background-color: #3a7bc8;"></span>
+            <span>Water & Sanitation</span>
+          </div>
+          <div class="legend-item">
+            <span class="legend-color" style="background-color: #c85a50;"></span>
+            <span>Economic Empowerment</span>
+          </div>
+          <div class="legend-item">
+            <span class="legend-color" style="background-color: #c850b9;"></span>
+            <span>Disaster Relief</span>
+          </div>
+        </div>
+      </div>
+      <div class="map-info-box" id="mapInfoBox">
+        <div class="map-info-close">&times;</div>
+        <h3 id="mapCountryName">Country Name</h3>
+        <div id="mapProjectList">
+          <!-- Projects will be inserted here with JavaScript -->
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Volunteer CTA -->
+  <section class="volunteer">
+    <div class="container">
+      <div class="volunteer-content">
+        <div class="volunteer-text">
+          <h2>Volunteer With Us</h2>
+          <p>Join our team of dedicated volunteers and make a real difference in the lives of people around the world. We offer various volunteering opportunities that match your skills and interests.</p>
+          <ul>
+            <li><i class="fas fa-check"></i> Volunteer locally or internationally</li>
+            <li><i class="fas fa-check"></i> Short-term and long-term opportunities available</li>
+            <li><i class="fas fa-check"></i> Use your skills where they're needed most</li>
+            <li><i class="fas fa-check"></i> Receive training and support from our team</li>
+            <li><i class="fas fa-check"></i> Join a global community of change-makers</li>
+          </ul>
+          <button class="volunteer-btn">Apply to Volunteer</button>
+        </div>
+        <div class="volunteer-image">
+          <img src="images/volunteer.jpg" alt="Volunteers working together">
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Testimonials and Success Stories -->
+  <section class="service-testimonials">
+    <div class="container">
+      <h2 class="section-title">Impact Stories</h2>
+      <div class="testimonial-slider">
+        <div class="testimonial-slides">
+          <div class="testimonial-slide active">
+            <div class="testimonial-content">
+              <div class="testimonial-quote">
+                <i class="fas fa-quote-left"></i>
+              </div>
+              <p>"The education program provided by Hope Foundation has transformed our village. Our children now have access to quality education and a brighter future. The school building project has become the center of our community's development."</p>
+              <div class="testimonial-author">
+                <img src="images/testimonial-1.jpg" alt="Sarah Johnson">
+                <div>
+                  <h4>Sarah Johnson</h4>
+                  <p>Village Leader, Ghana</p>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="testimonial-slide">
+            <div class="testimonial-content">
+              <div class="testimonial-quote">
+                <i class="fas fa-quote-left"></i>
+              </div>
+              <p>"Thanks to the healthcare initiative, our community now has access to medical services that were previously unavailable. This has literally saved lives, especially for pregnant women and young children who can now receive proper care."</p>
+              <div class="testimonial-author">
+                <img src="images/testimonial-2.jpg" alt="David Rodriguez">
+                <div>
+                  <h4>David Rodriguez</h4>
+                  <p>Community Health Worker, Peru</p>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="testimonial-slide">
+            <div class="testimonial-content">
+              <div class="testimonial-quote">
+                <i class="fas fa-quote-left"></i>
+              </div>
+              <p>"The water project has changed everything for us. No longer do women and children have to walk miles for clean water. Our quality of life has improved significantly, and waterborne diseases have decreased dramatically in our village."</p>
+              <div class="testimonial-author">
+                <img src="images/testimonial-3.jpg" alt="Amina Khalid">
+                <div>
+                  <h4>Amina Khalid</h4>
+                  <p>Mother of three, Kenya</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="testimonial-controls">
+          <button class="testimonial-prev"><i class="fas fa-chevron-left"></i></button>
+          <div class="testimonial-dots">
+            <span class="testimonial-dot active" data-index="0"></span>
+            <span class="testimonial-dot" data-index="1"></span>
+            <span class="testimonial-dot" data-index="2"></span>
+          </div>
+          <button class="testimonial-next"><i class="fas fa-chevron-right"></i></button>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-content">
+        <div class="footer-section">
+          <h3>Hope Foundation</h3>
+          <p>Making a difference in communities worldwide through sustainable development, education, and healthcare initiatives.</p>
+          <div class="social-links">
+            <a href="https://facebook.com" target="_blank"><i class="fab fa-facebook-f"></i></a>
+            <a href="https://twitter.com" target="_blank"><i class="fab fa-twitter"></i></a>
+            <a href="https://instagram.com" target="_blank"><i class="fab fa-instagram"></i></a>
+            <a href="https://linkedin.com" target="_blank"><i class="fab fa-linkedin-in"></i></a>
+          </div>
+        </div>
+        <div class="footer-section">
+          <h3>Quick Links</h3>
+          <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="about.html">About Us</a></li>
+            <li><a href="services.html">Our Services</a></li>
+            <li><a href="contact.html">Contact</a></li>
+            <li><a href="#" id="footerDonateBtn">Donate</a></li>
+            <li><a href="volunteer.html">Volunteer</a></li>
+          </ul>
+        </div>
+        <div class="footer-section">
+          <h3>Programs</h3>
+          <ul>
+            <li><a href="#education-tab" class="program-link" data-tab="education">Education</a></li>
+            <li><a href="#healthcare-tab" class="program-link" data-tab="healthcare">Healthcare</a></li>
+            <li><a href="#water-tab" class="program-link" data-tab="water">Water & Sanitation</a></li>
+            <li><a href="#economic-tab" class="program-link" data-tab="economic">Economic Empowerment</a></li>
+            <li><a href="#disaster-tab" class="program-link" data-tab="disaster">Disaster Relief</a></li>
+          </ul>
+        </div>
+        <div class="footer-section">
+          <h3>Newsletter</h3>
+          <p>Subscribe to our newsletter for updates on our projects and how you can help.</p>
+          <form id="footerNewsletterForm" class="footer-newsletter-form">
+            <input type="email" placeholder="Your email address" required>
+            <button type="submit">Subscribe</button>
+          </form>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <p>&copy; <span id="currentYear"></span> Hope Foundation. All rights reserved.</p>
+        <div class="footer-bottom-links">
+          <button onclick="window.location.href='privacy.html'">Privacy Policy</button>
+          <button onclick="window.location.href='terms.html'">Terms of Service</button>
+          <button onclick="window.location.href='sitemap.html'">Sitemap</button>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Donation Modal -->
+  <div class="modal" id="donationModal">
+    <div class="modal-content">
+      <span class="close-modal">&times;</span>
+      <h2>Make a Donation</h2>
+      <p>Your generous contribution helps us create lasting change in communities.</p>
+      <form id="donationForm">
+        <div class="form-group">
+          <label>Select Amount</label>
+          <div class="amount-options">
+            <div class="amount-option">
+              <input type="radio" name="amount" id="amount-10" value="10">
+              <label for="amount-10">$10</label>
+            </div>
+            <div class="amount-option">
+              <input type="radio" name="amount" id="amount-25" value="25">
+              <label for="amount-25">$25</label>
+            </div>
+            <div class="amount-option">
+              <input type="radio" name="amount" id="amount-50" value="50" checked>
+              <label for="amount-50">$50</label>
+            </div>
+            <div class="amount-option">
+              <input type="radio" name="amount" id="amount-100" value="100">
+              <label for="amount-100">$100</label>
+            </div>
+            <div class="amount-option custom-amount">
+              <input type="radio" name="amount" id="amount-custom" value="custom">
+              <label for="amount-custom">
+                <span>Custom:</span>
+                <input type="number" id="customAmount" placeholder="Enter amount" disabled>
+              </label>
+            </div>
+          </div>
+        </div>
+        <div class="form-group">
+          <label for="frequency">Donation Frequency</label>
+          <select id="frequency" name="frequency">
+            <option value="one-time">One-time</option>
+            <option value="monthly">Monthly</option>
+            <option value="quarterly">Quarterly</option>
+            <option value="annually">Annually</option>
+          </select>
+        </div>
+        <div class="form-group">
+          <label for="project">Donate To</label>
+          <select id="project" name="project">
+            <option value="general">General Fund</option>
+            <option value="education">Education</option>
+            <option value="healthcare">Healthcare</option>
+            <option value="water">Water & Sanitation</option>
+            <option value="economic">Economic Empowerment</option>
+            <option value="disaster">Disaster Relief</option>
+          </select>
+        </div>
+        <div class="form-buttons">
+          <button type="button" class="cancel-btn" id="cancelDonation">Cancel</button>
+          <button type="submit" class="submit-btn" id="submitDonation">Donate Now</button>
+        </div>
+      </form>
+    </div>
+  </div>
+
+  <script src="main.js"></script>
+  <script src="services.js"></script>
+</body>
+</html>

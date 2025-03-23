@@ -1,0 +1,375 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Contact Us - Hope Foundation</title>
+  <link rel="stylesheet" href="styles.css">
+  <link rel="stylesheet" href="contact.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700&family=Open+Sans:wght@300;400;500;600&display=swap" rel="stylesheet">
+</head>
+<body>
+  <!-- Navigation Bar -->
+  <nav class="navbar">
+    <div class="container">
+      <a href="index.html" class="logo">Hope Foundation</a>
+      <div class="nav-links" id="navLinks">
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="about.html">About Us</a></li>
+          <li><a href="services.html">Our Services</a></li>
+          <li><a href="contact.html" class="active">Contact</a></li>
+        </ul>
+      </div>
+      <div class="donate-btn-container">
+        <button class="donate-btn" id="donateBtn">Donate Now</button>
+      </div>
+      <div class="menu-toggle">
+        <i class="fas fa-bars"></i>
+      </div>
+    </div>
+  </nav>
+
+  <!-- Page Header -->
+  <section class="page-header">
+    <div class="page-header-overlay"></div>
+    <div class="page-header-content">
+      <h1 class="slide-in">Contact Us</h1>
+      <p class="slide-in">We'd love to hear from you. Reach out to us with your questions or inquiries.</p>
+    </div>
+  </section>
+
+  <!-- Contact Information Cards -->
+  <section class="contact-info">
+    <div class="container">
+      <div class="info-cards">
+        <div class="info-card fade-in">
+          <div class="info-icon">
+            <i class="fas fa-map-marker-alt"></i>
+          </div>
+          <h3>Visit Us</h3>
+          <p>123 Hope Street<br>New York, NY 10001<br>United States</p>
+        </div>
+        <div class="info-card fade-in">
+          <div class="info-icon">
+            <i class="fas fa-phone-alt"></i>
+          </div>
+          <h3>Call Us</h3>
+          <p>+1 (555) 123-4567<br>Monday-Friday: 9am-5pm</p>
+        </div>
+        <div class="info-card fade-in">
+          <div class="info-icon">
+            <i class="fas fa-envelope"></i>
+          </div>
+          <h3>Email Us</h3>
+          <p>info@hopefoundation.org<br>donations@hopefoundation.org</p>
+        </div>
+        <div class="info-card fade-in">
+          <div class="info-icon">
+            <i class="fas fa-globe"></i>
+          </div>
+          <h3>Follow Us</h3>
+          <div class="social-icons">
+            <a href="#"><i class="fab fa-facebook-f"></i></a>
+            <a href="#"><i class="fab fa-twitter"></i></a>
+            <a href="#"><i class="fab fa-instagram"></i></a>
+            <a href="#"><i class="fab fa-linkedin-in"></i></a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Contact Form and Map Section -->
+  <section class="contact-form-section">
+    <div class="container">
+      <div class="contact-grid">
+        <div class="contact-form-container slide-in-left">
+          <h2>Send Us a Message</h2>
+          <p>Have questions about our programs, volunteering opportunities, or how you can support our cause? Fill out the form below and we'll get back to you as soon as possible.</p>
+          <form id="contactForm" class="contact-form">
+            <div class="form-group">
+              <label for="name">Your Name*</label>
+              <input type="text" id="name" name="name" required>
+              <span class="error-message" id="name-error"></span>
+            </div>
+            <div class="form-group">
+              <label for="email">Your Email*</label>
+              <input type="email" id="email" name="email" required>
+              <span class="error-message" id="email-error"></span>
+            </div>
+            <div class="form-group">
+              <label for="subject">Subject*</label>
+              <input type="text" id="subject" name="subject" required>
+              <span class="error-message" id="subject-error"></span>
+            </div>
+            <div class="form-group">
+              <label for="message">Your Message*</label>
+              <textarea id="message" name="message" rows="5" required></textarea>
+              <span class="error-message" id="message-error"></span>
+            </div>
+            <div class="form-group">
+              <div class="checkbox-container">
+                <input type="checkbox" id="newsletter" name="newsletter">
+                <label for="newsletter">Subscribe to our newsletter for updates</label>
+              </div>
+            </div>
+            <button type="submit" class="submit-form-btn">Send Message</button>
+            <div id="form-success" class="success-message">Your message has been sent successfully! We'll get back to you soon.</div>
+          </form>
+        </div>
+        <div class="map-container slide-in-right">
+          <h2>Our Location</h2>
+          <div id="googleMap" class="map">
+            <!-- Google Maps will be loaded here -->
+          </div>
+          <div class="map-overlay">
+            <h3>Hope Foundation Headquarters</h3>
+            <p>123 Hope Street, New York, NY 10001</p>
+            <button id="getDirections" class="directions-btn">Get Directions</button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Regional Offices Section -->
+  <section class="regional-offices">
+    <div class="container">
+      <h2 class="section-title">Our Regional Offices</h2>
+      <p class="section-description">We have regional offices across the globe to better serve communities in need. Feel free to contact the office nearest to you.</p>
+      <div class="offices-grid">
+        <div class="office-card fade-in">
+          <h3>Africa Regional Office</h3>
+          <p><i class="fas fa-map-marker-alt"></i> Nairobi, Kenya</p>
+          <p><i class="fas fa-phone-alt"></i> +254 20 123 4567</p>
+          <p><i class="fas fa-envelope"></i> africa@hopefoundation.org</p>
+          <button class="office-btn" data-location="Nairobi, Kenya">View on Map</button>
+        </div>
+        <div class="office-card fade-in">
+          <h3>Asia Regional Office</h3>
+          <p><i class="fas fa-map-marker-alt"></i> New Delhi, India</p>
+          <p><i class="fas fa-phone-alt"></i> +91 11 2345 6789</p>
+          <p><i class="fas fa-envelope"></i> asia@hopefoundation.org</p>
+          <button class="office-btn" data-location="New Delhi, India">View on Map</button>
+        </div>
+        <div class="office-card fade-in">
+          <h3>Europe Regional Office</h3>
+          <p><i class="fas fa-map-marker-alt"></i> London, UK</p>
+          <p><i class="fas fa-phone-alt"></i> +44 20 7946 0958</p>
+          <p><i class="fas fa-envelope"></i> europe@hopefoundation.org</p>
+          <button class="office-btn" data-location="London, UK">View on Map</button>
+        </div>
+        <div class="office-card fade-in">
+          <h3>Latin America Office</h3>
+          <p><i class="fas fa-map-marker-alt"></i> Bogotá, Colombia</p>
+          <p><i class="fas fa-phone-alt"></i> +57 1 234 5678</p>
+          <p><i class="fas fa-envelope"></i> latam@hopefoundation.org</p>
+          <button class="office-btn" data-location="Bogotá, Colombia">View on Map</button>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- FAQ Section -->
+  <section class="faq" id="faq">
+    <div class="container">
+      <h2 class="section-title">Frequently Asked Questions</h2>
+      <div class="accordion">
+        <div class="accordion-item">
+          <div class="accordion-header">
+            <h3>How can I donate to Hope Foundation?</h3>
+            <span class="accordion-icon">+</span>
+          </div>
+          <div class="accordion-content">
+            <p>You can donate to Hope Foundation through our website by clicking the "Donate Now" button. We accept various payment methods including credit/debit cards, PayPal, and bank transfers. You can choose to make a one-time donation or set up recurring donations to support our programs on an ongoing basis.</p>
+          </div>
+        </div>
+        <div class="accordion-item">
+          <div class="accordion-header">
+            <h3>How can I volunteer with Hope Foundation?</h3>
+            <span class="accordion-icon">+</span>
+          </div>
+          <div class="accordion-content">
+            <p>We offer various volunteering opportunities both locally and internationally. You can apply to volunteer through our website by filling out the volunteer application form. Our team will review your application and get in touch with you to discuss potential opportunities that match your skills and interests.</p>
+          </div>
+        </div>
+        <div class="accordion-item">
+          <div class="accordion-header">
+            <h3>Is my donation tax-deductible?</h3>
+            <span class="accordion-icon">+</span>
+          </div>
+          <div class="accordion-content">
+            <p>Yes, Hope Foundation is a registered 501(c)(3) non-profit organization, and all donations made by U.S. taxpayers are tax-deductible to the extent allowed by law. You will receive a receipt for your donation that you can use for tax purposes.</p>
+          </div>
+        </div>
+        <div class="accordion-item">
+          <div class="accordion-header">
+            <h3>How is my donation used?</h3>
+            <span class="accordion-icon">+</span>
+          </div>
+          <div class="accordion-content">
+            <p>We are committed to transparency and accountability. On average, 85% of all donations go directly to our programs and services, with the remaining 15% used for administrative costs and fundraising efforts to sustain and grow our impact. You can view our annual reports and financial statements on our website for more detailed information.</p>
+          </div>
+        </div>
+        <div class="accordion-item">
+          <div class="accordion-header">
+            <h3>Can I specify which project my donation supports?</h3>
+            <span class="accordion-icon">+</span>
+          </div>
+          <div class="accordion-content">
+            <p>Yes, during the donation process, you can select which specific program area you'd like your donation to support, such as education, healthcare, water & sanitation, economic empowerment, or disaster relief. You can also choose to donate to our general fund, which allows us to allocate resources where they're most needed.</p>
+          </div>
+        </div>
+        <div class="accordion-item">
+          <div class="accordion-header">
+            <h3>How can I partner with Hope Foundation?</h3>
+            <span class="accordion-icon">+</span>
+          </div>
+          <div class="accordion-content">
+            <p>We welcome partnerships with businesses, foundations, and other organizations that share our vision and values. If you're interested in partnering with us, please contact us at partnerships@hopefoundation.org or fill out our contact form with details about your organization and how you'd like to collaborate.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Newsletter Section -->
+  <section class="newsletter">
+    <div class="container">
+      <h2>Stay Connected</h2>
+      <p>Subscribe to our newsletter for updates on our projects and how you can help.</p>
+      <form id="newsletterForm" class="newsletter-form">
+        <input type="email" placeholder="Your email address" required>
+        <button type="submit">Subscribe</button>
+      </form>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-content">
+        <div class="footer-section">
+          <h3>Hope Foundation</h3>
+          <p>Making a difference in communities worldwide through sustainable development, education, and healthcare initiatives.</p>
+          <div class="social-links">
+            <a href="https://facebook.com" target="_blank"><i class="fab fa-facebook-f"></i></a>
+            <a href="https://twitter.com" target="_blank"><i class="fab fa-twitter"></i></a>
+            <a href="https://instagram.com" target="_blank"><i class="fab fa-instagram"></i></a>
+            <a href="https://linkedin.com" target="_blank"><i class="fab fa-linkedin-in"></i></a>
+          </div>
+        </div>
+        <div class="footer-section">
+          <h3>Quick Links</h3>
+          <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="about.html">About Us</a></li>
+            <li><a href="services.html">Our Services</a></li>
+            <li><a href="contact.html">Contact</a></li>
+            <li><a href="#" id="footerDonateBtn">Donate</a></li>
+            <li><a href="volunteer.html">Volunteer</a></li>
+          </ul>
+        </div>
+        <div class="footer-section">
+          <h3>Programs</h3>
+          <ul>
+            <li><a href="services.html">Education</a></li>
+            <li><a href="services.html">Healthcare</a></li>
+            <li><a href="services.html">Water & Sanitation</a></li>
+            <li><a href="services.html">Economic Empowerment</a></li>
+            <li><a href="services.html">Disaster Relief</a></li>
+          </ul>
+        </div>
+        <div class="footer-section">
+          <h3>Newsletter</h3>
+          <p>Subscribe to our newsletter for updates on our projects and how you can help.</p>
+          <form id="footerNewsletterForm" class="footer-newsletter-form">
+            <input type="email" placeholder="Your email address" required>
+            <button type="submit">Subscribe</button>
+          </form>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <p>&copy; <span id="currentYear"></span> Hope Foundation. All rights reserved.</p>
+        <div class="footer-bottom-links">
+          <button onclick="window.location.href='privacy.html'">Privacy Policy</button>
+          <button onclick="window.location.href='terms.html'">Terms of Service</button>
+          <button onclick="window.location.href='sitemap.html'">Sitemap</button>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Donation Modal -->
+  <div class="modal" id="donationModal">
+    <div class="modal-content">
+      <span class="close-modal">&times;</span>
+      <h2>Make a Donation</h2>
+      <p>Your generous contribution helps us create lasting change in communities.</p>
+      <form id="donationForm">
+        <div class="form-group">
+          <label>Select Amount</label>
+          <div class="amount-options">
+            <div class="amount-option">
+              <input type="radio" name="amount" id="amount-10" value="10">
+              <label for="amount-10">$10</label>
+            </div>
+            <div class="amount-option">
+              <input type="radio" name="amount" id="amount-25" value="25">
+              <label for="amount-25">$25</label>
+            </div>
+            <div class="amount-option">
+              <input type="radio" name="amount" id="amount-50" value="50" checked>
+              <label for="amount-50">$50</label>
+            </div>
+            <div class="amount-option">
+              <input type="radio" name="amount" id="amount-100" value="100">
+              <label for="amount-100">$100</label>
+            </div>
+            <div class="amount-option custom-amount">
+              <input type="radio" name="amount" id="amount-custom" value="custom">
+              <label for="amount-custom">
+                <span>Custom:</span>
+                <input type="number" id="customAmount" placeholder="Enter amount" disabled>
+              </label>
+            </div>
+          </div>
+        </div>
+        <div class="form-group">
+          <label for="frequency">Donation Frequency</label>
+          <select id="frequency" name="frequency">
+            <option value="one-time">One-time</option>
+            <option value="monthly">Monthly</option>
+            <option value="quarterly">Quarterly</option>
+            <option value="annually">Annually</option>
+          </select>
+        </div>
+        <div class="form-group">
+          <label for="project">Donate To</label>
+          <select id="project" name="project">
+            <option value="general">General Fund</option>
+            <option value="education">Education</option>
+            <option value="healthcare">Healthcare</option>
+            <option value="water">Water & Sanitation</option>
+            <option value="economic">Economic Empowerment</option>
+            <option value="disaster">Disaster Relief</option>
+          </select>
+        </div>
+        <div class="form-buttons">
+          <button type="button" class="cancel-btn" id="cancelDonation">Cancel</button>
+          <button type="submit" class="submit-btn" id="submitDonation">Donate Now</button>
+        </div>
+      </form>
+    </div>
+  </div>
+
+  <!-- Google Maps API -->
+  <script src="https://maps.googleapis.com/maps/api/js?key=YOUR_GOOGLE_MAPS_API_KEY&callback=initMap" async defer></script>
+  <script src="main.js"></script>
+  <script src="contact.js"></script>
+</body>
+</html>
